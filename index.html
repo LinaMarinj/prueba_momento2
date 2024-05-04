@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso CSS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
 
-<h3>Página en construcción</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 
-  </body>
+</head>
+
+<body>
+
+  <header>
+    <nav class="bg-gray-800 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div id="menuElements" class="flex items-center">
+          <div class="flex">
+            <a href="#" class="text-white text-xl font-semibold mr-4"> <img id="icono" src="img/icono.png" alt=""></a>
+            <h1 id="tituloPrincipal">Cursos Básicos de CSS</h1>
+          </div>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="text-white hover:text-gray-300">Inicio</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Cursos</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">Tips</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-24 flex justify-center">
+      <section id="cursos" class="flex justify-between mx-4">
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
+          <img class="w-full img-cursos" src="img/gamacolores.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Hex y RGB: Colores Web</div>
+            <p class="text-gray-700 text-base">
+              Aprende a dominar los colores esenciales para el diseño web moderno en un formato rápido y práctico.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
+          <img class="w-full img-cursos" src="img/boxmodel.png" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Dominando el Box Model</div>
+            <p class="text-gray-700 text-base">
+              Aprende a controlar el diseño de tus páginas web con CSS de manera eficiente y efectiva.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
+          <img class="w-full img-cursos" src="img/especificidad.png" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Especificidad de Estilos</div>
+            <p class="text-gray-700 text-base">
+              Curso introductorio de CSS enfocado en la especificidad de selectores, explorando cómo afectan los estilos
+              entre #id, .class y &lt;etiqueta&gt;
+              . Aprende a priorizar y resolver conflictos de estilo de manera efectiva.
+            </p>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
+
+
+
+  </header>
+
+</body>
+
 </html>

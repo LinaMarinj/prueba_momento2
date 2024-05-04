@@ -1,0 +1,30 @@
+#icono {
+    width: 50px;
+    height: 50px;
+}
+
+#tituloPrincipal {
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    /* Cambia el tamaño del texto*/
+    font-weight: bold;
+    /* Hace el texto en negrita */
+}
+
+#menuElements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#cursos {
+    max-width: 80%;
+}
+
+.img-cursos {
+    height: 256px;
+    /*alto*/
+    object-fit: contain;
+
+}
