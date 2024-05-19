@@ -4,100 +4,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cursos CSS</title>
+  <title>Styling School</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
   <header>
-    <nav class="bg-gray-900 py-4">
-      <div class="container mx-auto flex justify-between items-center">
+    <nav class="bg-gray-900 py-1">
+      <div class="container mx-auto flex items-center justify-between">
         <div id="menuElements" class="flex items-center">
-          <div class="flex">
-            <a href="#" class="text-white text-xl font-semibold mr-4"> <img id="icono" src="img/icono.webp" alt=""></a>
-          </div>
-          <ul class="flex space-x-4">
-            <li><a href="#" class="text-white hover:text-gray-300">Inicio</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Cursos</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300">Videos</a></li>
-          </ul>
+          <img id="icono" src="img/logo.webp" alt="logo">
+          <h2 class="text-white text-2xl ml-2">Styling School</h2>
         </div>
-
+        <ul class="flex space-x-4">
+          <li><a href="#cursos" class="text-white hover:text-gray-300">Inicio</a></li>
+          <li><a href="#cursos" class="text-white hover:text-gray-300">Cursos</a></li>
+          <li><a href="videos.html" class="text-white hover:text-gray-300">Videos</a></li>
+        </ul>
       </div>
     </nav>
+    <div class="h-9 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+      <p class="flex justify-center text-white font-bold font-medium underline">
+        Aprende a dar forma y estilo a tus proyectos web de manera creativa y efectiva
+      </p>
+    </div>
   </header>
 
-  <main id="contenido" class="flex-wrap mt-24 flex justify-center">
+  <main>
 
-    <section class=" w-full">
+    <section id="container1" class="grid lg:grid-cols-2 flex-wrap p-8 items-center mt-0">
+
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Del Concepto al Código: Cursos
+          Básicos de CSS</h1>
+      </div>
+
+      <div>
+        <img src="img/project-css.png" alt="Descripción de la imagen" class="w-full">
+      </div>
+
+    </section>
 
 
-      <div class="mx-auto max-w-2xl py-4">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Del Concepto al Código: Cursos
-            Básicos de CSS</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Aprende a dar forma y estilo a tus proyectos web de manera
-            creativa y efectiva.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
+    <section id="bg-blue-primary" class="grid grid-cols-2 p-28 gap-y-8">
+      <div class="flex  justify-between text-white">
 
+        <img src="img/portatil.png" alt="pc">
+        <h3>Cursos</h3>
+        <p>Podrás disfrutar de 3 cursos completamente gratis que te servirán como punto de partida
+          en tu despegue hacia el mundo del CSS.</p>
+
+      </div>
+
+      <div class="flex  justify-between text-white">
+        <img src="img/pc.png" alt="pc">
+        <h3>Videos</h3>
+        <p>Encontrarás videos que te servirán de apoyo para aplicar tus conocimientos de manera creativa
+          y asombrosa, llevando tus habilidades al siguiente nivel.</p>
+      </div>
+    </section>
+
+    <div class="h-9 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+      <p class="flex justify-center text-white font-bold font-medium underline">
+        El momento perfecto es ahora, ¡empieza ya!
+      </p>
+    </div>
+
+
+
+    <section id="container2" class="flex justify-between">
+
+      <div class="mt-10">
+        <h2 class="text-4xl font-bold tracking-tight sm:text-6xl hover:text-blue-600">¿CSS?</h2>
+        <p class="mt-10 mr-10">CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de
+          un documento escrito
+          en HTML o XML. Permite controlar el diseño y la apariencia visual de una página web, incluyendo aspectos como
+          colores, fuentes, márgenes y espaciado.</p>
+
+        <div class="mt-10">
+          <h3 class="text-2xl">Aplicación de CSS</h3>
+          <ol class="list-decimal">
+            <li>En línea: Directamente en los elementos HTML usando el atributo style.
+            <li>Interno: Dentro de una etiqueta <strong>&lt;style&gt;</strong> en el documento<strong> HTML</strong>
+            </li>
+            <li>Externo: En archivos<strong>H.css</strong> separados vinculados al<strong> HTML</strong> HTML</li>
+          </ol>
+        </div>
+      </div>
+
+      <div >
+        <iframe class="mt-20 rounded-lg " id="videoposi" width="500" height="300"
+        src="https://www.youtube.com/embed/yF5xtcLjTMo?si=G8bz1gSTjETTyAOh" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <p style="font-size: 10px; color: #888; margin-top: 5px;">Video tomado de <a
+          href="https://youtu.be/yF5xtcLjTMo?si=YckiCa-Y-crl87NH" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
+    
+
+      </div>
+      
+    </section>
+
+
+    <section id="cursos" class="flex justify-between items-stretch mx-0 mt-0 flex-wrap">
+      <h2 class="text-center text-white  text-4xl font-bold w-full tracking-tight sm:text-6xl hover:text-blue-600 mb-20">
+        Cursos</h2>
+      <a href="hexYrgb.html">
+
+        <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4 h-full">
+          <img class="w-full img-cursos" src="img/gamacolores.webp" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Hex y RGB: Colores Web</div>
+            <p class="text-gray-700 text-base">
+              Aprende a dominar los colores esenciales para el diseño web moderno en un formato rápido y práctico.
+            </p>
           </div>
         </div>
-      </div>
+      </a>
+
+      <a href="boxModel.html">
+        <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4 h-full">
+          <img class="w-full img-cursos" src="img/boxmodel.webp" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Dominando el Box Model</div>
+            <p class="text-gray-700 text-base">
+              Aprende a controlar el diseño de tus páginas web con CSS de manera eficiente y efectiva.
+            </p>
+          </div>
+        </div>
+      </a>
+
+
+
+      <a href="especificidad.html">
+        <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4 h-full">
+          <img class="w-full img-cursos" src="img/especificidad.webp" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Especificidad de Estilos</div>
+            <p class="text-gray-700 text-base">
+              Curso introductorio de CSS enfocado en la especificidad de selectores, explorando cómo afectan los estilos
+              entre #id, .class y &lt;etiqueta&gt;
+              . Aprende a priorizar y resolver conflictos de estilo de manera efectiva.
+            </p>
+          </div>
+        </div>
+      </a>
 
     </section>
 
-    <section>
-      
-        <img src="img/project-css.png" alt="">
-     
-    </section>
 
-
-    <section id="cursos" class="flex justify-between mx-4">
-      <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
-        <img class="w-full img-cursos" src="img/gamacolores.webp" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Hex y RGB: Colores Web</div>
-          <p class="text-gray-700 text-base">
-            Aprende a dominar los colores esenciales para el diseño web moderno en un formato rápido y práctico.
-          </p>
-        </div>
-      </div>
-
-      <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
-        <img class="w-full img-cursos" src="img/boxmodel.webp" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Dominando el Box Model</div>
-          <p class="text-gray-700 text-base">
-            Aprende a controlar el diseño de tus páginas web con CSS de manera eficiente y efectiva.
-          </p>
-        </div>
-      </div>
-
-      <div id="cuadroConte" class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
-        <img class="w-full img-cursos" src="img/especificidad.webp" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Especificidad de Estilos</div>
-          <p class="text-gray-700 text-base">
-            Curso introductorio de CSS enfocado en la especificidad de selectores, explorando cómo afectan los estilos
-            entre #id, .class y &lt;etiqueta&gt;
-            . Aprende a priorizar y resolver conflictos de estilo de manera efectiva.
-          </p>
-        </div>
-      </div>
-
-    </section>
   </main>
 
+  <hr id="hr-footer">
   <footer class="bg-gray-900 text-gray-300 py-5">
+
     <div class="container mx-auto flex justify-between items-center">
+      <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
       <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
-      <a href="#">
-        <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
-      </a>
       <ul class="flex space-x-4">
         <li><a href="#" class="hover:text-white">Menú</a></li>
       </ul>

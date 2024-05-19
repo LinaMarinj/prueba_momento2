@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominando el Box Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="bg-gray-900 py-1">
+            <div class="container mx-auto flex items-center justify-between">
+                <div id="menuElements" class="flex items-center">
+                    <img id="icono" src="img/logo.webp" alt="logo">
+                    <h2 class="text-white text-2xl ml-2">Styling School</h2>
+                </div>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-white hover:text-gray-300">Inicio</a></li>
+                    <li><a href="cursos.html" class="text-white hover:text-gray-300">Cursos</a></li>
+                    <li><a href="videos.html" class="text-white hover:text-gray-300">Videos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="h-9 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+            <p class="flex justify-center text-white font-bold font-medium underline">
+                Aprende a dar forma y estilo a tus proyectos web de manera creativa y efectiva
+            </p>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <section class="flex justify-between mt-20">
+            <div>
+                <h2 class="text-2xl">Modelo de Caja (Box Model)</h2>
+
+                <p>es un concepto fundamental en CSS que describe cómo se estructuran y se comportan los elementos en
+                    una
+                    página
+                    web. Cada elemento de una página web se representa como una caja rectangular. El Box Model incluye:
+                </p>
+
+            </div>
+            <div class="ease-in duration-300"> <iframe width="500" height="315"
+                    src="https://www.youtube.com/embed/XxMwhv3Q8YQ?si=A4-9Lej_OGopL5rc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
+            <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-white">Menú</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
