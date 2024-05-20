@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Especificidad de Estilos</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="especificidad.css">
 
 </head>
 
@@ -21,7 +21,7 @@
                 </div>
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-white hover:text-gray-300">Inicio</a></li>
-                    <li><a href="cursos.html" class="text-white hover:text-gray-300">Cursos</a></li>
+                    <li><a href="index.html #cursos" class="text-white hover:text-gray-300">Cursos</a></li>
                     <li><a href="videos.html" class="text-white hover:text-gray-300">Videos</a></li>
                 </ul>
             </div>
@@ -36,15 +36,80 @@
 
 
     <main>
+        <section>
+
+            <h2 id="title-especifidad" class="text-center text-4xl _blank font-bold tracking-tight w-full mt-5">
+                Especificidad de Estilos
+            </h2>
+            <section class="flex justify-between p-10">
+                <div>
+                    <p class="mt-5">La especificidad en CSS es un sistema que determina qué reglas CSS se aplican a un
+                        elemento cuando hay múltiples reglas que podrían aplicarse. La especificidad se basa en el
+                        número de cada tipo de selector en la regla y sigue una jerarquía de importancia.</p>
+
+                    <h3 class="text-2xl mt-10 font-bold">Conceptos Clave de Especificidad</h3>
+                    <p class="font-medium mt-5">La especificidad se calcula en base a una puntuación que se asigna a
+                        cada regla CSS. Esta puntuación se compone de cuatro valores, que se podrían conceptualizar
+                        como: (a, b, c, d).</p>
+
+
+                    <ul role="list" class="list-disc space-y-2 pl-4 text-sm mt-10">
+                        <li><span class="text-black"><strong>a:</strong> Estilos en línea (style="..."). Tienen la
+                                especificidad más alta.</span>
+                        </li>
+                        <li><span class="text-black"> <strong>b:</strong> Selectores de ID (#id)</span>
+                        </li>
+                        <li><span class="text-black"><strong>c:</strong> Selectores de clase, atributos y pseudo-clases
+                                (.class, [attribute], :hover, etc.).</span>
+                        </li>
+                        <li><span class="text-black"><strong>d:</strong> Selectores de tipo (elementos HTML) y
+                                pseudo-elementos (div, p, ::before, etc.)</span>
+                        </li>
+                    </ul>
+
+
+                    <h3 class="font-bold mt-10">Cómo se Calcula la Especificidad</h3>
+                    <p>
+                        Se suma el número de cada tipo de selector en la regla. La especificidad se expresa como un
+                        conjunto de cuatro valores (a, b, c, d), donde cada valor tiene un peso diferente, y los valores
+                        más altos tienen mayor prioridad.
+                    </p>
+                </div>
+
+
+                <div class="transition-transform duration-300 hover:-translate-y-2">
+
+                    <iframe class="mt-20 rounded-lg" width="400" height="300"
+                        src="https://www.youtube.com/embed/v5GxoV14YOE?si=-2GeaX0RuMwbDsU0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <p style="font-size: 10px; color: #888; margin-top: 5px;">Video tomado de <a
+                            href="https://youtu.be/v5GxoV14YOE?si=OerZGmZylq4dUDg_" target="_blank"
+                            rel="noopener noreferrer">YouTube</a>.</p>
+
+
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+
 
     </main>
 
 
 
+
     <footer class="bg-gray-900 text-gray-300 py-5">
+
         <div class="container mx-auto flex justify-between items-center">
-            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
             <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
+            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
             <ul class="flex space-x-4">
                 <li><a href="#" class="hover:text-white">Menú</a></li>
             </ul>

@@ -5,8 +5,7 @@
     height: 50px;
 }
 
-
-#title-box{
+#title-especifidad{
     color: black;
     transition: color 0.4s ease;
     /* transición */
@@ -14,9 +13,7 @@
 }
 
 
-#title-box:hover {
+#title-especifidad:hover {
     color: #5079f6;
     /* Cambio de color al pasar el cursor sobre el título */
 }
-
-

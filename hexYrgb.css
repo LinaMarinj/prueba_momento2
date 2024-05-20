@@ -1,12 +1,15 @@
 
 
+
+
+
 #icono {
     width: 50px;
     height: 50px;
 }
 
 
-#title-box{
+#title-colors{
     color: black;
     transition: color 0.4s ease;
     /* transición */
@@ -14,7 +17,7 @@
 }
 
 
-#title-box:hover {
+#title-colors:hover {
     color: #5079f6;
     /* Cambio de color al pasar el cursor sobre el título */
 }

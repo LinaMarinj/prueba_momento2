@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dominando el Box Model</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
-
-
-
-
+    <link rel="stylesheet" href="boxModel.css">
 
 </head>
+
 
 <body>
 
@@ -25,7 +22,7 @@
                 </div>
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-white hover:text-gray-300">Inicio</a></li>
-                    <li><a href="cursos.html" class="text-white hover:text-gray-300">Cursos</a></li>
+                    <li><a href="index.html #cursos" class="text-white hover:text-gray-300">Cursos</a></li>
                     <li><a href="videos.html" class="text-white hover:text-gray-300">Videos</a></li>
                 </ul>
             </div>
@@ -41,39 +38,80 @@
 
     <main>
 
-        <section class="flex justify-between mt-20">
+        <h2 id="title-box" class="text-center text-4xl _blank font-bold tracking-tight w-full mt-5">
+            Dominando el Box Model
+        </h2>
+        <section class="flex justify-between p-10">
             <div>
-                <h2 class="text-2xl">Modelo de Caja (Box Model)</h2>
 
-                <p>es un concepto fundamental en CSS que describe cómo se estructuran y se comportan los elementos en
-                    una
-                    página
-                    web. Cada elemento de una página web se representa como una caja rectangular. El Box Model incluye:
-                </p>
+                <p class="mt-5">El Box Model en CSS es un concepto fundamental que describe cómo se estructuran y
+                    presentan los elementos en una página web. Cada elemento se representa como una caja rectangular, y
+                    el modelo de caja define los diferentes componentes de esta caja. Entender el box model es esencial
+                    para el diseño y la disposición de los elementos en una página web.</p>
 
+                <h3 class="text-2xl mb-10 mt-10 font-bold">Componentes del Box Model</h3>
+                <p class="font-medium mb-10">El box model consta de los siguientes componentes: </p>
+
+                <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                    <li><span class="text-black"><strong>Content (Contenido):</strong> El área donde se muestra el contenido (texto,
+                            imágenes, etc.). Sus dimensiones se definen por las propiedades width y height.</span>
+                    </li>
+                    <li><span class="text-black"><strong>Padding (Relleno):</strong> El espacio entre el contenido y el borde de la caja.
+                            El padding aumenta el área total de la caja sin afectar el tamaño del contenido. Puedes
+                            configurar el padding usando las propiedades padding-top, padding-right, padding-bottom, y
+                            padding-left, o con la propiedad abreviada padding.</span>
+                    </li>
+                    <li><span class="text-black"><strong>Border (Borde):</strong> El borde alrededor del padding (y del contenido, si no
+                            hay padding). El ancho del borde se puede definir con las propiedades border-width,
+                            border-style, y border-color. También puedes usar la propiedad abreviada border para
+                            configurar todos estos valores a la vez.</span>
+                    </li>
+
+                    <li><span class="text-black"><strong>Margin (Margen):</strong> El espacio exterior alrededor del borde de la caja.
+                            Los márgenes crean espacio entre la caja y otros elementos adyacentes. Las propiedades para
+                            configurar los márgenes son margin-top, margin-right, margin-bottom, y margin-left, o la
+                            propiedad abreviada margin.</span>
+                    </li>
+                </ul>
             </div>
-            <div class="ease-in duration-300"> <iframe width="500" height="315"
-                    src="https://www.youtube.com/embed/XxMwhv3Q8YQ?si=A4-9Lej_OGopL5rc" title="YouTube video player"
+
+
+            <div class="transition-transform duration-300 hover:-translate-y-2">
+
+                <iframe class="mt-20 rounded-lg" width="400" height="300"
+                    src="https://www.youtube.com/embed/XxMwhv3Q8YQ?si=a_qcZgeHonoUqTFX" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p style="font-size: 10px; color: #888; margin-top: 5px;">Video tomado de <a
+                        href="https://youtu.be/XxMwhv3Q8YQ?si=Sb1iPwlP6Ze2afyi" target="_blank"
+                        rel="noopener noreferrer">YouTube</a>.</p>
             </div>
 
 
+        </section>
+       
+        <section class="w-full flex justify-center h-72 mb-20">
+            <img src="img/boxmodel.webp" alt="Box Model">
 
         </section>
 
     </main>
 
+
+
     <footer class="bg-gray-900 text-gray-300 py-5">
+
         <div class="container mx-auto flex justify-between items-center">
-            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
             <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
+            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
             <ul class="flex space-x-4">
                 <li><a href="#" class="hover:text-white">Menú</a></li>
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>

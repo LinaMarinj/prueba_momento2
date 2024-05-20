@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Model</title>
+    <title>Hex y RGB</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hexYrgb.css">
 
 </head>
 
@@ -21,7 +21,7 @@
                 </div>
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-white hover:text-gray-300">Inicio</a></li>
-                    <li><a href="cursos.html" class="text-white hover:text-gray-300">Cursos</a></li>
+                    <li><a href="index.html #cursos" class="text-white hover:text-gray-300">Cursos</a></li>
                     <li><a href="videos.html" class="text-white hover:text-gray-300">Videos</a></li>
                 </ul>
             </div>
@@ -37,20 +37,129 @@
 
     <main>
 
+        <h2 id="title-colors" class="text-center text-4xl _blank font-bold tracking-tight w-full mt-5">
+            Hex y RGB: Colores Web
+        </h2>
+        <section class="flex justify-between p-10">
+            <div>
+                <h2 id="title-colors" class="text-4xl _blank font-bold tracking-tight w-full mt-10">
+                    Hexadecimal
+                </h2>
+                <p class="mt-5">En CSS, Hex se refiere a un formato de notación hexadecimal utilizado para definir
+                    colores. El
+                    formato
+                    hexadecimal utiliza el sistema numérico base 16, que incluye los números del 0 al 9 y las letras de
+                    la A
+                    a la F. Cada color en hexadecimal se representa con un # seguido de seis caracteres, donde cada par
+                    de
+                    caracteres define la intensidad del color rojo, verde y azul (RGB), respectivamente.</p>
+
+                <h3 class="text-2xl mt-10 font-bold">Estructura de un Color Hexadecimal</h3>
+                <p class="font-medium mt-5">#RRGGBB</p>
+
+                <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                    <li><span class="text-black"><strong>RR</strong> representa el componente rojo.</span>
+                    </li>
+                    <li><span class="text-black"> <strong>GG</strong> representa el componente verde</span>
+                    </li>
+                    <li><span class="text-black"><strong>BB</strong> representa el componente azul.</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="transition-transform duration-300 hover:-translate-y-2">
+                <iframe class="mt-20 rounded-lg" width="400" height="300"
+                    src="https://www.youtube.com/embed/5aDqILReKsY?si=62S5cg2tz9SLcin4" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="https://youtu.be/5aDqILReKsY?si=M-nuuz-e-5_OGd9_" allowfullscreen></iframe>
+
+                    <p style="font-size: 10px; color: #888; margin-top: 5px;">Video tomado de <a
+                        href="https://youtu.be/5aDqILReKsY?si=CCB89inTsaX_BJ2y" target="_blank"
+                        rel="noopener noreferrer">YouTube</a>.</p>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="flex justify-between p-10">
+
+            <div>
+                <h2 id="title-colors" class="text-4xl _blank font-bold tracking-tight w-full">
+                    RGB
+                </h2>
+                <p class="mt-5">En CSS, RGB es un modelo de color que se utiliza para definir colores mediante la
+                    combinación de los tres colores primarios de luz: rojo (Red), verde (Green) y azul (Blue). Cada
+                    componente puede tener un valor que va de 0 a 255. Estos valores indican la intensidad de cada
+                    color.</p>
+
+                <h3 class="text-2xl mt-10 font-bold">Sintaxis de RGB</h3>
+                <p class="font-medium mt-5">La sintaxis para definir un color usando RGB en CSS es:</p>
+                <P><strong>Color: rgb(red, green, blue);</strong></P>
+                <p class="font-bold mt-10">Ejemplos</p>
+
+                <ul role="list" class="list-disc space-y-2 pl-4 text-sm mt-5">
+                    <li><span class="text-black">rgb(255, 0, 0): <strong>Rojo</strong> (máxima intensidad de rojo, sin verde ni
+                            azul).</span>
+                    </li>
+                    <li><span class="text-black"> rgb(0, 255, 0): <strong>Verde</strong> (máxima intensidad de verde, sin rojo ni
+                            azul).</span>
+                    </li>
+                    <li><span class="text-black"> rgb(0, 0, 255): <strong>Azul</strong> (máxima intensidad de azul, sin rojo ni
+                            verde).</span>
+                    </li>
+                    <li><span class="text-black">rgb(255, 255, 255): <strong>Blanco</strong>(máxima intensidad de todos los
+                            colores).</span>
+                    </li>
+                    <li><span class="text-black"> rgb(0, 0, 0):<strong> Negro</strong> (sin intensidad de ninguno de los colores).</span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="transition-transform duration-300 hover:-translate-y-2">
+                <iframe class="mt-20 rounded-lg" width="400" height="300"
+                    src="https://www.youtube.com/embed/lBJH2p6mqjQ?si=jRB_tWEHEscZexnl" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="https://youtu.be/lBJH2p6mqjQ?si=annZUEZkl9ocye2W" allowfullscreen></iframe>
+
+                    <p style="font-size: 10px; color: #888; margin-top: 5px;">Video tomado de <a
+                        href="https://youtu.be/lBJH2p6mqjQ?si=WEAdhXAXkh625n23" target="_blank"
+                        rel="noopener noreferrer">YouTube</a>.</p>
+            </div>
+
+        </section>
+
+        
+
+
+
+
+
+
+
     </main>
 
 
 
-    <footer class="bg-gray-900 text-gray-300 py-5">
-        <div class="container mx-auto flex justify-between items-center">
-            <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
-            <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-white">Menú</a></li>
-            </ul>
-        </div>
-    </footer>
 
+    <footer class="bg-gray-900 text-gray-300 py-5">
+
+        <div class="container mx-auto flex justify-between items-center">
+          <p class="text-center text-sm"> cursoscsslmmj@gmail.com</p>
+          <p class="text-sm">&copy; 2024 Todos los derechos reservados</p>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-white">Menú</a></li>
+          </ul>
+        </div>
+      </footer>
+    
 </body>
 
 </html>
